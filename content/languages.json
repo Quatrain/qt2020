@@ -1,0 +1,24 @@
+{
+  "en": {
+    "company_name": "Quatrain Technologies",
+    "company_slogan": "Weaving the Fabric of the Digital Age",
+
+    "descr_section_title": "Data knowledge empower the World",
+    "descr_section_subtitle": "A word of Introduction",
+    "descr_section_content": "Quatrain Technologies carries a twenty-year expertise in web software development and lifecycle. Working side-by-side with various companies and institutions of all sizes, our Team focuses on helping organizations reach the technical goals of their projects, whether software related, hardware related or both.",
+
+    "quote_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet lectus velit. Quisque ut auctor velit, non.",
+    "quote_author": "Oliver Lépine",
+    "quote_author_title": "President, Co-Founder",
+
+    "prom_section_title": "Our expertises",
+
+    "prom_subsection1_title": "Design & Architecture",
+    "prom_subsection1_subtitle": "360 degrees and beyond",
+    "prom_subsection1_content": "Immerged in disruptive trends and seasoned with years of software architecture & development, we provide a 360 degrees vision on digital endeavours."
+},
+
+  "fr": {
+    "company_name": "Quatrain Technologies"
+  }
+}

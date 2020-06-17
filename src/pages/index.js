@@ -18,6 +18,15 @@ import {
 } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
 
+import detectLanguage from '../../lib/detectLanguage.js'
+
+//Languages Pack Importation
+import JSONData from '../../content/languages.json'
+
+//Call f the function which will allow us to detect the user's navigator language
+var language = detectLanguage.detectLanguage(JSONData)
+
+
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
 // For more advanced usage please check Responsive docs under the "Usage" section.
@@ -35,7 +44,7 @@ const HomepageHeading = ({ mobile }) => (
   <Container text>
     <Header
       as='h1'
-      content='Quatrain Technologies'
+      content = {language.company_name}
       inverted
       style={{
         fontSize: mobile ? '2em' : '4em',
@@ -92,30 +101,6 @@ class DesktopContainer extends Component {
             style={{ minHeight: 700, padding: '1em 0em' }}
             vertical
           >
-            <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              pointing={!fixed}
-              secondary={!fixed}
-              size='large'
-            >
-              <Container>
-                <Menu.Item as='a' active>
-                  Home
-                </Menu.Item>
-                <Menu.Item as='a'>Work</Menu.Item>
-                <Menu.Item as='a'>Company</Menu.Item>
-                <Menu.Item as='a'>Careers</Menu.Item>
-                <Menu.Item position='right'>
-                  <Button as='a' inverted={!fixed}>
-                    Log in
-                  </Button>
-                  <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
-                    Sign Up
-                  </Button>
-                </Menu.Item>
-              </Container>
-            </Menu>
             <HomepageHeading />
           </Segment>
         </Visibility>
