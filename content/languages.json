@@ -8,14 +8,30 @@
     "descr_section_content": "Quatrain Technologies carries a twenty-year expertise in web software development and lifecycle. Working side-by-side with various companies and institutions of all sizes, our Team focuses on helping organizations reach the technical goals of their projects, whether software related, hardware related or both.",
 
     "quote_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet lectus velit. Quisque ut auctor velit, non.",
-    "quote_author": "Oliver Lépine",
+    "quote_author": "Olivier Lépine",
     "quote_author_title": "President, Co-Founder",
 
     "prom_section_title": "Our expertises",
 
     "prom_subsection1_title": "Design & Architecture",
     "prom_subsection1_subtitle": "360 degrees and beyond",
-    "prom_subsection1_content": "Immerged in disruptive trends and seasoned with years of software architecture & development, we provide a 360 degrees vision on digital endeavours."
+    "prom_subsection1_content": "Immerged in disruptive trends and seasoned with years of software architecture & development, we provide a 360 degrees vision on digital endeavours.",
+
+    "prom_subsection2_title": "Hardware Makerspace",
+    "prom_subsection2_subtitle": "Hand and Mind as the two ends of our digital extent.",
+    "prom_subsection2_content": "Equipped with state of the art 3D printing and electronic development, we can put our idea into devices and appliances.",
+
+    "prom_subsection3_title": "Mobile App in the Cloud",
+    "prom_subsection3_subtitle": "Mobile experience on steroids",
+    "prom_subsection3_content": "Software has become our choice mobility friend with Cloud as its backbone and fast growing pill. Anyone with the right skills can compete and reach to billions of users.",
+
+    "prom_subsection4_title": "Predictive Insights",
+    "prom_subsection4_subtitle": "From wot to wit",
+    "prom_subsection4_content": "Leveraging on Machine Learning with the help of qualified data, we design and provide predictive models to forward thinking industries.",
+
+    "contact_form_title": "Contact us",
+    "contact_form_subtitle": ""
+
 },
 
   "fr": {
