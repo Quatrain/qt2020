@@ -3,6 +3,11 @@
     "company_name": "Quatrain Technologies",
     "company_slogan": "Weaving the Fabric of the Digital Age",
 
+    "ui_navbar_home": "Home",
+    "ui_navbar_intro": "Introduction",
+    "ui_navbar_quote": "Quote",
+    "ui_navbar_expertises": "Our expertises",
+
     "descr_section_title": "Data knowledge empower the World",
     "descr_section_subtitle": "A word of Introduction",
     "descr_section_content": "Quatrain Technologies carries a twenty-year expertise in web software development and lifecycle. Working side-by-side with various companies and institutions of all sizes, our Team focuses on helping organizations reach the technical goals of their projects, whether software related, hardware related or both.",

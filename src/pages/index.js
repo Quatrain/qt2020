@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import { Link, HashLink } from 'gatsby'
 
 import {
   Button,
@@ -50,8 +50,7 @@ const HomepageHeading = ({ mobile }) => (
       style={{
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
-        marginBottom: 0,
-        marginTop: mobile ? '1.5em' : '3em',
+        marginTop: mobile ? '1.5em' : '1em',
       }}
     />
     <Header
@@ -91,13 +90,39 @@ class DesktopContainer extends Component {
           once={false}
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
+          id='home'
         >
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 700, padding: '1em 0em', backgroundImage: "url('https://envato-sites-images.imgix.net/e6068eaf-7101-4959-bb8b-e0ed8b4d19f1?auto=format&fit=max&w=2560&q=60')", backgroundSize: 'cover'}}
+            style={{ minHeight: 300, padding: '1em 0em', backgroundImage: "url('https://envato-sites-images.imgix.net/e6068eaf-7101-4959-bb8b-e0ed8b4d19f1?auto=format&fit=max&w=2560&q=60')", backgroundSize: 'cover'}}
             vertical
           >
+            <Menu
+              fixed={fixed ? 'top' : null}
+              inverted={!fixed}
+              pointing={!fixed}
+              secondary={!fixed}
+              size='large'
+              style={{border: 'none'}}
+            >
+              <Container >
+              <Link to="#home">
+                <Menu.Item as='a' active >
+                {language.ui_navbar_home}
+                </Menu.Item>
+              </Link>
+              <Link to="#introduction">
+                <Menu.Item as='a'>{language.ui_navbar_intro}</Menu.Item>
+              </Link>
+              <Link to="#quote">
+                <Menu.Item as='a'>{language.ui_navbar_quote}</Menu.Item>
+              </Link>
+                <Link to="#expertises">
+                  <Menu.Item as='a'>{language.ui_navbar_expertises}</Menu.Item>
+                </Link>
+              </Container>
+            </Menu>
             <HomepageHeading />
           </Segment>
         </Visibility>
@@ -130,15 +155,6 @@ class MobileContainer extends Component {
         maxWidth={Responsive.onlyMobile.maxWidth}
       >
 
-          <Segment
-            inverted
-            textAlign='center'
-            style={{ minHeight: 350, padding: '1em 0em'}}
-            vertical
-          >
-            <HomepageHeading mobile />
-          </Segment>
-
           {children}
       </Responsive>
     )
@@ -162,7 +178,7 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical>
+    <Segment style={{ padding: '8em 0em' }} vertical id='introduction'>
       <Container text>
         <Header as='h3' style={{ fontSize: '2em' }}>
           {language.descr_section_title}
@@ -173,7 +189,7 @@ const HomepageLayout = () => (
       </Container>
     </Segment>
 
-    <Segment style={{ padding: '0em', backgroundColor: "rgb(153, 204, 0)", backgroundSize: 'cover'}} vertical>
+    <Segment style={{ padding: '0em', backgroundColor: "rgb(153, 204, 0)", backgroundSize: 'cover'}} vertical id='quote'>
       <Grid celled='internally' columns='equal' stackable>
         <Grid.Row textAlign='center'>
           <Grid.Column style={{ paddingBottom: '5em', paddingTop: '5em' }}>
@@ -189,9 +205,13 @@ const HomepageLayout = () => (
       </Grid>
     </Segment>
 
-    <Segment vertical>
+    <Segment vertical id='expertises'>
       <Container>
-        <Grid columns={2}>
+      <Header as='h2' style={{ fontSize: '3em', textAlign: 'center'}}>
+          {language.prom_section_title}
+        </Header>
+
+        <Grid columns={2} style={{width: '828px', marginLeft: 'auto', marginRight: 'auto'}}>
         <Grid.Row>
             <Grid.Column>
               <Image src='https://images.unsplash.com/photo-1484544808355-8ec84e534d75?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE5MjE4fQ&rect=1160%2C0%2C4368%2C4368&auto=format&w=414' />
