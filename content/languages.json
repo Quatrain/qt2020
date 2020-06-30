@@ -1,6 +1,8 @@
 {
+  "__": {
+    "company_name": "Quatrain Technologies"
+  },
   "en": {
-    "company_name": "Quatrain Technologies",
     "company_slogan": "Weaving the Fabric of the Digital Age",
 
     "ui_navbar_home": "Home",

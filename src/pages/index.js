@@ -25,7 +25,8 @@ import detectLanguage from '../../lib/detectLanguage.js'
 import JSONData from '../../content/languages.json'
 
 //Call the function which will allow us to detect the user's navigator language
-var language = detectLanguage.detectLanguage(JSONData)
+const language = { ...detectLanguage.detectLanguage(JSONData), ...JSONData.__ }
+
 
 
 // Heads up!
