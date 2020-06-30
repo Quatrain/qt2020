@@ -49,6 +49,7 @@ const HomepageHeading = ({ mobile }) => (
       content = {language.company_name}
       inverted
       style={{
+        fontFamily: 'Planer-Bold',
         fontSize: mobile ? '2em' : '4em',
         fontWeight: 'normal',
         marginTop: mobile ? '1.5em' : '1em',
