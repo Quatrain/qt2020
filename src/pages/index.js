@@ -1,16 +1,17 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Link, HashLink } from 'gatsby'
+import { Helmet } from 'react-helmet'
+import { Link } from 'gatsby'
+import CookieConsent from "react-cookie-consent";
+
 
 import {
   Button,
   Container,
-  Divider,
   Grid,
   Header,
   Icon,
   Image,
-  List,
   Menu,
   Responsive,
   Segment,
@@ -19,7 +20,11 @@ import {
 } from 'semantic-ui-react'
 import 'semantic-ui-css/semantic.min.css';
 
+//Font-Family
+import '../../content/planer-bold.css';
+
 import detectLanguage from '../../lib/detectLanguage.js'
+import changeLanguage from '../../lib/changeLanguage.js'
 
 //Languages Pack Importation
 import JSONData from '../../content/languages.json'
@@ -43,7 +48,24 @@ const getWidth = () => {
  * such things.
  */
 const HomepageHeading = ({ mobile }) => (
+
   <Container text>
+
+    <Helmet>
+      <title>Quatrain Technologies</title>
+    </Helmet>
+
+    <CookieConsent
+  location="bottom"
+  buttonText={language.cookie_accept}
+  cookieName="qt_lang"
+  style={{ background: "#2B373B" }}
+  buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+  expires={150}
+>
+{language.cookie_text}
+</CookieConsent>
+
     <Header
       as='h1'
       content = {language.company_name}
@@ -123,14 +145,21 @@ class DesktopContainer extends Component {
                 <Link to="#expertises">
                   <Menu.Item as='a'>{language.ui_navbar_expertises}</Menu.Item>
                 </Link>
+                <Menu.Item position='right'>
+                  <Button as='a' onClick={changeLanguage.changeLanguage} inverted={!fixed}>
+                   {language.language_switch_button}
+                  </Button>
+                </Menu.Item>
               </Container>
             </Menu>
             <HomepageHeading />
+
           </Segment>
         </Visibility>
 
         {children}
       </Responsive>
+
     )
   }
 }
@@ -148,7 +177,8 @@ class MobileContainer extends Component {
 
   render() {
     const { children } = this.props
-    const { sidebarOpened } = this.state
+    //const { sidebarOpened } = this.state
+
 
     return (
       <Responsive
@@ -156,6 +186,49 @@ class MobileContainer extends Component {
         getWidth={getWidth}
         maxWidth={Responsive.onlyMobile.maxWidth}
       >
+       {/* <Sidebar
+          as={Menu}
+          animation='push'
+          inverted
+          onHide={this.handleSidebarHide}
+          vertical
+          visible={sidebarOpened}
+        >
+          <Link to="#home">
+            <Menu.Item as='a' active >
+              {language.ui_navbar_home}
+            </Menu.Item>
+            </Link>
+            <Link to="#introduction">
+              <Menu.Item as='a'>{language.ui_navbar_intro}</Menu.Item>
+            </Link>
+            <Link to="#quote">
+              <Menu.Item as='a'>{language.ui_navbar_quote}</Menu.Item>
+            </Link>
+              <Link to="#expertises">
+                <Menu.Item as='a'>{language.ui_navbar_expertises}</Menu.Item>
+              </Link>
+    </Sidebar>*/}
+
+        {/*<Sidebar.Pusher dimmed={sidebarOpened}>*/}
+          <Segment
+            inverted
+            textAlign='center'
+            style={{ minHeight: 350, padding: '1em 0em', backgroundImage: "url('https://envato-sites-images.imgix.net/e6068eaf-7101-4959-bb8b-e0ed8b4d19f1?auto=format&fit=max&w=2560&q=60')", backgroundSize: 'cover'}}
+            vertical
+          >
+            <Container>
+              <Menu inverted pointing secondary size='large'>
+
+                <Menu.Item position='right'>
+                <Button as='a' onClick={changeLanguage.changeLanguage} >
+                 {language.language_switch_button}
+                 </Button>
+                 </Menu.Item>
+              </Menu>
+            </Container>
+            <HomepageHeading mobile />
+          </Segment>
 
           {children}
       </Responsive>
@@ -180,9 +253,9 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
   <ResponsiveContainer>
-    <Segment style={{ padding: '8em 0em' }} vertical id='introduction'>
-      <Container text>
-        <Header as='h3' style={{ fontSize: '2em' }}>
+    <Segment style={{ padding: '8em 0em' }} vertical>
+      <Container text >
+        <Header as='h3' style={{ fontSize: '2em' }} id='introduction'>
           {language.descr_section_title}
         </Header>
         <p style={{ fontSize: '1.33em' }}>

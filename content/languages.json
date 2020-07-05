@@ -5,6 +5,9 @@
   "en": {
     "company_slogan": "Weaving the Fabric of the Digital Age",
 
+    "cookie_text": "This website uses cookies.",
+    "cookie_accept": "I understand.",
+
     "ui_navbar_home": "Home",
     "ui_navbar_intro": "Introduction",
     "ui_navbar_quote": "Quote",
@@ -37,11 +40,17 @@
     "prom_subsection4_content": "Leveraging on Machine Learning with the help of qualified data, we design and provide predictive models to forward thinking industries.",
 
     "contact_form_title": "Contact us",
-    "contact_form_subtitle": ""
+    "contact_form_subtitle": "",
+
+    "language_switch_button": "Passer en Français"
 
 },
 
   "fr": {
-    "company_name": "Quatrain Technologies"
+
+    "language_switch_button": "Switch to English",
+
+    "cookie_text": "Ce site web utilise des cookies.",
+    "cookie_accept": "J'ai compris."
   }
 }
