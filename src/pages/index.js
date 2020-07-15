@@ -55,7 +55,7 @@ const HomepageHeading = ({ mobile }) => (
       <title>Quatrain Technologies</title>
     </Helmet>
 
-    <CookieConsent
+    {/*<CookieConsent
   location="bottom"
   buttonText={language.cookie_accept}
   cookieName="qt_lang"
@@ -64,7 +64,7 @@ const HomepageHeading = ({ mobile }) => (
   expires={150}
 >
 {language.cookie_text}
-</CookieConsent>
+    </CookieConsent>*/}
 
     <Header
       as='h1'
@@ -110,7 +110,7 @@ class DesktopContainer extends Component {
 
     return (
       <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
-        <Visibility
+     <Visibility
           once={false}
           onBottomPassed={this.showFixedMenu}
           onBottomPassedReverse={this.hideFixedMenu}
@@ -139,17 +139,14 @@ class DesktopContainer extends Component {
               <Link to="#introduction">
                 <Menu.Item as='a'>{language.ui_navbar_intro}</Menu.Item>
               </Link>
-              <Link to="#quote">
-                <Menu.Item as='a'>{language.ui_navbar_quote}</Menu.Item>
-              </Link>
                 <Link to="#expertises">
                   <Menu.Item as='a'>{language.ui_navbar_expertises}</Menu.Item>
                 </Link>
-                <Menu.Item position='right'>
+                {/*<Menu.Item position='right'>
                   <Button as='a' onClick={changeLanguage.changeLanguage} inverted={!fixed}>
                    {language.language_switch_button}
                   </Button>
-                </Menu.Item>
+    </Menu.Item>*/}
               </Container>
             </Menu>
             <HomepageHeading />
@@ -186,6 +183,7 @@ class MobileContainer extends Component {
         getWidth={getWidth}
         maxWidth={Responsive.onlyMobile.maxWidth}
       >
+
        {/* <Sidebar
           as={Menu}
           animation='push'
@@ -220,11 +218,11 @@ class MobileContainer extends Component {
             <Container>
               <Menu inverted pointing secondary size='large'>
 
-                <Menu.Item position='right'>
+                {/*<Menu.Item position='right'>
                 <Button as='a' onClick={changeLanguage.changeLanguage} >
                  {language.language_switch_button}
                  </Button>
-                 </Menu.Item>
+  </Menu.Item>*/}
               </Menu>
             </Container>
             <HomepageHeading mobile />
@@ -357,6 +355,7 @@ const HomepageLayout = () => (
       </Container>
     </Segment>
   </ResponsiveContainer>
+
 )
 
 export default HomepageLayout
