@@ -21,13 +21,13 @@ import {
 import 'semantic-ui-css/semantic.min.css';
 
 //Font-Family
-import '../../content/planer-bold.css';
+import '../content/planer-bold.css';
 
-import detectLanguage from '../../lib/detectLanguage.js'
-import changeLanguage from '../../lib/changeLanguage.js'
+import detectLanguage from '../lib/detectLanguage.js'
+import changeLanguage from '../lib/changeLanguage.js'
 
 //Languages Pack Importation
-import JSONData from '../../content/languages.json'
+import JSONData from '../content/languages.json'
 
 //Call the function which will allow us to detect the user's navigator language
 const language = { ...detectLanguage.detectLanguage(JSONData), ...JSONData.__ }
