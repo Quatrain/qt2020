@@ -1,14 +1,15 @@
 //When called, switch the localStorage to the other language
 
-exports.changeLanguage = function(){
+exports.changeLanguage = function() {
 
-  const storedSetting = localStorage.getItem('qt_lang');
+  const storedSetting = localStorage && localStorage.getItem('qt_lang')
 
-  switch (storedSetting){
+  switch (storedSetting) {
     case 'fr':
       localStorage.setItem('qt_lang', 'en');
       break;
     case 'en':
+    default:
       localStorage.setItem('qt_lang', 'fr');
       break;
   }
@@ -16,4 +17,4 @@ exports.changeLanguage = function(){
   document.location.reload(true);
 
 
-  };
+}

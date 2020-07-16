@@ -2,8 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
-import CookieConsent from "react-cookie-consent";
-
+import CookieConsent from "react-cookie-consent"
 
 import {
   Button,
@@ -18,7 +17,7 @@ import {
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
-import 'semantic-ui-css/semantic.min.css';
+import 'semantic-ui-css/semantic.min.css'
 
 //Font-Family
 import '../content/planer-bold.css';
@@ -29,7 +28,7 @@ import changeLanguage from '../lib/changeLanguage.js'
 //Languages Pack Importation
 import JSONData from '../content/languages.json'
 
-//Call the function which will allow us to detect the user's navigator language
+// Call the function which will allow us to detect the user's navigator language
 const language = { ...detectLanguage.detectLanguage(JSONData), ...JSONData.__ }
 
 
