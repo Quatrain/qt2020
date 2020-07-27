@@ -1,0 +1,82 @@
+{
+  "__": {
+    "company_name": "Quatrain Technologies",
+    "descr_section_title": "Data & Knowledge empower the World"
+  },
+  "en": {
+    "company_slogan": "Weaving the Fabric of the Digital Age",
+
+    "cookie_text": "This website uses cookies.",
+    "cookie_accept": "I understand.",
+
+    "ui_navbar_home": "Home",
+    "ui_navbar_intro": "Introduction",
+    "ui_navbar_quote": "Quote",
+    "ui_navbar_expertises": "Our expertises",
+
+    "descr_section_subtitle": "A word of Introduction",
+    "descr_section_content": "Quatrain Technologies carries a twenty-year expertise in web software development and lifecycle. Working side-by-side with various companies and institutions of all sizes, our Team focuses on helping organizations reach the technical goals of their projects, whether software related, hardware related or both.",
+
+    "quote_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet lectus velit. Quisque ut auctor velit, non.",
+    "quote_author": "Olivier Lépine",
+    "quote_author_title": "President, Co-Founder",
+
+    "prom_section_title": "Our expertises",
+
+    "prom_subsection1_title": "Design & Architecture",
+    "prom_subsection1_subtitle": "360 degrees and beyond",
+    "prom_subsection1_content": "Immerged in disruptive trends and seasoned with years of software architecture & development, we provide a 360 degrees vision on digital endeavours.",
+
+    "prom_subsection2_title": "Hardware Makerspace",
+    "prom_subsection2_subtitle": "Hand and Mind as the two ends of our digital extent.",
+    "prom_subsection2_content": "Equipped with state of the art 3D printing and electronic development, we can put our idea into devices and appliances.",
+
+    "prom_subsection3_title": "Mobile App in the Cloud",
+    "prom_subsection3_subtitle": "Mobile experience on steroids",
+    "prom_subsection3_content": "Software has become our choice mobility friend with Cloud as its backbone and fast growing pill. Anyone with the right skills can compete and reach to billions of users.",
+
+    "prom_subsection4_title": "Predictive Insights",
+    "prom_subsection4_subtitle": "From wot to wit",
+    "prom_subsection4_content": "Leveraging on Machine Learning with the help of qualified data, we design and provide predictive models to forward thinking industries.",
+
+    "contact_form_title": "Contact us",
+    "contact_form_subtitle": "",
+
+    "language_switch_button": "Passer en Français"
+
+},
+
+  "fr": {
+    "company_slogan": "Tissons la toile de l'âge numérique",
+    "language_switch_button": "Switch to English",
+
+    "cookie_text": "Ce site web utilise des cookies.",
+    "cookie_accept": "J'ai compris.",
+
+    "ui_navbar_home": "Accueil",
+    "ui_navbar_intro": "Introduction",
+    "ui_navbar_quote": "Quote",
+    "ui_navbar_expertises": "Nos expertises",
+
+    "prom_subsection1_title": "Design & Architecture",
+    "prom_subsection1_subtitle": "360 degrés et au delà",
+    "prom_subsection1_content": "Passionnés par les émergences et tendances disruptives et aguerris par des années d'analyse et de développement, nous proposons une vision stratégique et technique des tendances fortes comme des signaux faibles du numérique.",
+
+    "prom_subsection2_title": "Espace de fabrication",
+    "prom_subsection2_subtitle": "De la pensée à la matière, les deux outils de notre extension numérique",
+    "prom_subsection2_content": "Equipés d'imprimantes 3D et d'outils de développement électronique, nous transformons vos idées en objets et appareils",
+
+    "prom_subsection3_title": "Application Mobile dans le Cloud",
+    "prom_subsection3_subtitle": "Une expérience Mobile survitaminée",
+    "prom_subsection3_content": "Les apps mobiles sont devenues nos alliés mobilité avec le Cloud comme support et vecteur de croissance. Toute organisation avec les bonnes compétences peut maintenant rejoindre la compétition et atteindre des milliards d'individus.",
+
+    "prom_subsection4_title": "Modèles prédictifs",
+    "prom_subsection4_subtitle": "De la matière à la pensée",
+    "prom_subsection4_content": "En nous appuyant sur l'apprentissage automatique à partir de données qualifiées, nous concevons et déployons des modèles prédictifs pour repenser l'industrie et les services.",
+
+
+    "descr_section_subtitle": "Quelques mots d'introduction",
+    "descr_section_content": "Quatrain Technologies dispose d'une expertise de plus de vingt ans dans le développement de logiciels et la gestion de son cycle de vie. Travaillant main dans la main avec des sociétés et institutions de toutes tailles, notre équipe se concentre sur l'aide aux organisations dans l'acomplissement stratégique et technique de leurs projets numériques, qu'ils implique logiciel, électronique ou un mélange des deux."
+
+  }
+}
