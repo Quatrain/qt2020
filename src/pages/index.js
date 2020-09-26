@@ -135,17 +135,20 @@ class DesktopContainer extends Component {
                 {language.ui_navbar_home}
                 </Menu.Item>
               </Link>
+              <p></p>
               <Link to="#introduction">
                 <Menu.Item as='a'>{language.ui_navbar_intro}</Menu.Item>
               </Link>
-                <Link to="#expertises">
+              <p></p>
+              <Link to="#expertises">
                   <Menu.Item as='a'>{language.ui_navbar_expertises}</Menu.Item>
-                </Link>
-                {/*<Menu.Item position='right'>
+              </Link>
+
+              {/*<Menu.Item position='right'>
                   <Button as='a' onClick={changeLanguage.changeLanguage} inverted={!fixed}>
-                   {language.language_switch_button}
+                    {language.language_switch_button}
                   </Button>
-    </Menu.Item>*/}
+              </Menu.Item>*/}
               </Container>
             </Menu>
             <HomepageHeading />
