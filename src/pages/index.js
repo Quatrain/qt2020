@@ -218,10 +218,10 @@ class MobileContainer extends Component {
               <Menu inverted pointing secondary size='large'>
 
                 {/*<Menu.Item position='right'>
-                <Button as='a' onClick={changeLanguage.changeLanguage} >
-                 {language.language_switch_button}
-                 </Button>
-  </Menu.Item>*/}
+                  <Button as='a' onClick={changeLanguage.changeLanguage} >
+                  {language.language_switch_button}
+                  </Button>
+                  </Menu.Item>*/}
               </Menu>
             </Container>
             <HomepageHeading mobile />
@@ -256,7 +256,7 @@ const HomepageLayout = () => (
           {language.descr_section_title}
         </Header>
         <p style={{ fontSize: '1.33em' }}>
-        {language.descr_section_content}
+          {language.descr_section_content}
         </p>
       </Container>
     </Segment>
