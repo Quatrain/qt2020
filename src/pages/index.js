@@ -22,6 +22,9 @@ import 'semantic-ui-css/semantic.min.css'
 //Font-Family
 import '../content/planer-bold.css';
 
+//Bannière
+import banner_background from '../content/banner_background.png';
+
 import detectLanguage from '../lib/detectLanguage.js'
 import changeLanguage from '../lib/changeLanguage.js'
 
@@ -118,7 +121,7 @@ class DesktopContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 300, padding: '1em 0em', backgroundImage: "url('https://envato-sites-images.imgix.net/e6068eaf-7101-4959-bb8b-e0ed8b4d19f1?auto=format&fit=max&w=2560&q=60')", backgroundSize: 'cover'}}
+            style={{ minHeight: 300, padding: '1em 0em', backgroundImage: `url(${banner_background})`, backgroundSize: 'cover'}}
             vertical
           >
             <Menu
@@ -214,7 +217,7 @@ class MobileContainer extends Component {
           <Segment
             inverted
             textAlign='center'
-            style={{ minHeight: 350, padding: '1em 0em', backgroundImage: "url('https://envato-sites-images.imgix.net/e6068eaf-7101-4959-bb8b-e0ed8b4d19f1?auto=format&fit=max&w=2560&q=60')", backgroundSize: 'cover'}}
+            style={{ minHeight: 350, padding: '1em 0em', backgroundImage: `url(${banner_background})`, backgroundSize: 'cover'}}
             vertical
           >
             <Container>
