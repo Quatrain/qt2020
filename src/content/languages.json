@@ -8,6 +8,7 @@
 
     "cookie_text": "This website uses cookies.",
     "cookie_accept": "I understand.",
+    "cookie_decline": "Decline",
 
     "ui_navbar_home": "Home",
     "ui_navbar_intro": "Introduction",
@@ -52,6 +53,7 @@
 
     "cookie_text": "Ce site web utilise des cookies.",
     "cookie_accept": "J'ai compris.",
+    "cookie_decline": "Refuser",
 
     "ui_navbar_home": "Accueil",
     "ui_navbar_intro": "Introduction",

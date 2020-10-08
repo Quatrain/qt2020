@@ -7,5 +7,5 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['prop-types', 'react', 'semantic-ui-react'],
+  plugins: ['prop-types', 'react', 'semantic-ui-react', {resolve: `gatsby-plugin-gdpr-cookies`}],
 }

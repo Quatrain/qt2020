@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
-import CookieConsent from "react-cookie-consent"
+import CookieConsent, { Cookies } from "react-cookie-consent"
 
 import {
   Button,
@@ -57,16 +57,18 @@ const HomepageHeading = ({ mobile }) => (
       <title>Quatrain Technologies</title>
     </Helmet>
 
-    {/*<CookieConsent
-  location="bottom"
-  buttonText={language.cookie_accept}
-  cookieName="qt_lang"
-  style={{ background: "#2B373B" }}
-  buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-  expires={150}
->
-{language.cookie_text}
-    </CookieConsent>*/}
+    {<CookieConsent
+      location="bottom"
+      buttonText={language.cookie_accept}
+      enableDeclineButton
+      declineButtonText={language.cookie_decline}
+      cookieName="qt_lang"
+      style={{ background: "#2B373B" }}
+      buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+      expires={150}
+    >
+      {language.cookie_text}
+    </CookieConsent>}
 
     <Header
       as='h1'
