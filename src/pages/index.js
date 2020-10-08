@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'gatsby'
-import CookieConsent from "react-cookie-consent"
+import CookieConsent, { Cookies } from "react-cookie-consent"
 
 import {
   Button,
@@ -26,7 +26,7 @@ import '../content/planer-bold.css';
 import banner_background from '../content/banner_background.png';
 
 import detectLanguage from '../lib/detectLanguage.js'
-import changeLanguage from '../lib/changeLanguage.js'
+//import changeLanguage from '../lib/changeLanguage.js'
 
 //Languages Pack Importation
 import JSONData from '../content/languages.json'
@@ -57,16 +57,18 @@ const HomepageHeading = ({ mobile }) => (
       <title>Quatrain Technologies</title>
     </Helmet>
 
-    {/*<CookieConsent
-  location="bottom"
-  buttonText={language.cookie_accept}
-  cookieName="qt_lang"
-  style={{ background: "#2B373B" }}
-  buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
-  expires={150}
->
-{language.cookie_text}
-    </CookieConsent>*/}
+    {<CookieConsent
+      location="bottom"
+      buttonText={language.cookie_accept}
+      enableDeclineButton
+      declineButtonText={language.cookie_decline}
+      cookieName="qt_lang"
+      style={{ background: "#2B373B" }}
+      buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+      expires={150}
+    >
+      {language.cookie_text}
+    </CookieConsent>}
 
     <Header
       as='h1'

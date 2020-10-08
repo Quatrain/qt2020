@@ -16,6 +16,7 @@
   "dependencies": {
     "gatsby": "^2.22.15",
     "gatsby-cli": "^2.12.45",
+    "gatsby-plugin-gdpr-cookies": "^1.0.7",
     "json-loader": "^0.5.7",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",

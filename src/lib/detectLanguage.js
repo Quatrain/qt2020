@@ -5,11 +5,11 @@ exports.detectLanguage = function(JSONData){
   function language_switch(lang){
     switch (lang) {
       case 'fr':
-        localStorage.setItem('qt_lang', 'fr');
+        //localStorage.setItem('qt_lang', 'fr');
         return  JSONData.fr;
         break;
       default:
-        localStorage.setItem('qt_lang', 'en');
+        //localStorage.setItem('qt_lang', 'en');
         return JSONData.en;
         break;
     }
