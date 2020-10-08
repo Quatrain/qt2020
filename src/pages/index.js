@@ -26,7 +26,7 @@ import '../content/planer-bold.css';
 import banner_background from '../content/banner_background.png';
 
 import detectLanguage from '../lib/detectLanguage.js'
-import changeLanguage from '../lib/changeLanguage.js'
+//import changeLanguage from '../lib/changeLanguage.js'
 
 //Languages Pack Importation
 import JSONData from '../content/languages.json'
